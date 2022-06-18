@@ -34,6 +34,13 @@ async def root():
 async def read_item():
     return items
 
+@app.post("/items/")
+async def create_item(mainName, Blog_Id, Title, Availability, Description, Date, Author):
+    items = {mainName: {"name": Blog_Id, "Title": Title, "Availability": Availability, "Description": Description, "Date": Date, "Author": Author}}
+    return items
+
+
+
 
     
 # create blog, update blog, delete blog

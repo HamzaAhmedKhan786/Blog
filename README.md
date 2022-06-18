@@ -1,2 +1,2 @@
-run server
-run python -m uvicorn main:app
+#run server
+python -m uvicorn main:app
